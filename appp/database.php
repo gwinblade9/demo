@@ -1,6 +1,4 @@
 <?php
-// Простое файловое хранилище вместо SQLite3
-// Работает на любой версии PHP 5.6+
 
 class Database {
     private $dataDir = 'database_data/';
