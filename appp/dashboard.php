@@ -26,7 +26,7 @@ $bookings = $db->getBookings($_SESSION['user_id']);
 </head>
 <body>
 <div class="container">
-    <h2>📋 Мои бронирования</h2>
+    <h2>Мои бронирования</h2>
     <div class="nav-links">
         <a href="booking.php">+ Новое бронирование</a>
         <a href="index.php">Главная</a>
@@ -48,7 +48,7 @@ $bookings = $db->getBookings($_SESSION['user_id']);
                     <button type="submit" style="margin-top:8px">Оставить отзыв</button>
                 </form>
             <?php elseif(!empty($row['review'])): ?>
-                <div class="meta">⭐ Отзыв: <?= htmlspecialchars($row['review']) ?></div>
+                <div class="meta">Отзыв: <?= htmlspecialchars($row['review']) ?></div>
             <?php endif; ?>
         </div>
         <?php endforeach; ?>
